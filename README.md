@@ -2,7 +2,7 @@
 
 # 🔐 Hash Auditor
 
-<img src="logo.png" alt="Hash Auditor" width="180"/>
+<img src="https://raw.githubusercontent.com/AnonymoDGH/hash-auditor/main/logo.png" alt="Hash Auditor" width="180"/>
 
 **Audit your passwords. Hash them. Identify hashes. Crack your own.**
 
@@ -83,7 +83,7 @@ hashaudit crack --hash 5d41402abc4b2a76b9719d911017c592 --wordlist rockyou.txt
 
 ## How it works
 
-<img src="assets/architecture.svg" alt="Architecture" width="820"/>
+<img src="https://raw.githubusercontent.com/AnonymoDGH/hash-auditor/main/assets/architecture.svg" alt="Architecture" width="820"/>
 
 ## Tests
 
