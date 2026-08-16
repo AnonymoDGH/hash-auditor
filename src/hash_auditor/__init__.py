@@ -134,4 +134,43 @@ def audit_file(lines: str) -> list[dict]:
 
 
 __all__ = ["WEAK", "ALGOS", "HASH_LENGTHS", "hash_text", "identify",
-           "entropy_bits", "analyze", "crack", "audit_file"]
+           "entropy_bits", "analyze", "crack", "audit_file",
+           # submodules (imported last: several of them import this package)
+           "hashes", "wordlists", "rules", "zxcvbn_lite", "hashid",
+           "rainbow", "breach", "policy", "generator", "report", "mask",
+           "stats", "similarity", "entropy", "history", "formats",
+           "combinator", "pcfg", "brute", "leet", "keyboard", "dates",
+           "audit", "wordlist_tools", "fingerprint", "checksums"]
+
+__version__ = "0.2.0"
+
+# Submodule imports come after the core API above because several modules
+# (audit, leet, ...) import names from this package at import time.
+from . import (  # noqa: E402
+    audit,
+    breach,
+    brute,
+    checksums,
+    combinator,
+    dates,
+    entropy,
+    fingerprint,
+    formats,
+    generator,
+    hashid,
+    hashes,
+    history,
+    keyboard,
+    leet,
+    mask,
+    pcfg,
+    policy,
+    rainbow,
+    report,
+    rules,
+    similarity,
+    stats,
+    wordlist_tools,
+    wordlists,
+    zxcvbn_lite,
+)
